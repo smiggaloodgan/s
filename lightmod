@@ -19,7 +19,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : Creation.
+-- Latest Update : Colors.
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -468,7 +468,7 @@ do
             --Properties
 
             Converted["_Loader"].AnchorPoint = Vector2.new(1, 1)
-            Converted["_Loader"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Loader"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Loader"].Position = UDim2.new(1, -20, 1, -20)
             Converted["_Loader"].Size = UDim2.new(0, 280, 0, 127)
             Converted["_Loader"].Name = "Loader"
@@ -701,7 +701,7 @@ do
             Converted["_Key"].Parent = Converted["_Loader"]
 
             Converted["_Input"].AnchorPoint = Vector2.new(1, 0)
-            Converted["_Input"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Input"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Input"].Position = UDim2.new(0, 269, 0, 94)
             Converted["_Input"].Size = UDim2.new(0, 257, 0, 24)
             Converted["_Input"].Name = "Input"
@@ -912,7 +912,7 @@ do
             Converted["_Ignore8"].Parent = Converted["_Theme8"]
 
             Converted["_Player"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_Player"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Player"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Player"].BorderSizePixel = 0
             Converted["_Player"].Position = UDim2.new(0, 140, 0, 77)
             Converted["_Player"].Size = UDim2.new(0, 245, 0, 71)
@@ -1036,7 +1036,7 @@ do
         end
 
         info.Rank = info.Rank or "Exploiter"
-        info.RankColor = info.RankColor or Color3.fromRGB(255 , 128 , 0)
+        info.RankColor = info.RankColor or Color3.fromRGB(128, 0, 128)
 
         if info.CheckKey and not info.Discord then
         end
@@ -1761,7 +1761,7 @@ do
 
             Converted["_ScrollingFrame1"].AutomaticCanvasSize = Enum.AutomaticSize.Y
             Converted["_ScrollingFrame1"].CanvasSize = UDim2.new(0, 0, 1, 0)
-            Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB(30.00000619888306, 30.00000619888306, 30.00000619888306)
+            Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB((225, 225, 225))
             Converted["_ScrollingFrame1"].ScrollBarImageTransparency = 0.20000000298023224
             Converted["_ScrollingFrame1"].ScrollBarThickness = 5
             Converted["_ScrollingFrame1"].Active = true
@@ -2654,7 +2654,7 @@ do
 
             -- Properties:
 
-            Converted["_Notification"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Notification"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Notification"].BackgroundTransparency = 1
             Converted["_Notification"].Size = UDim2.new(1, 0, 0, 75)
             Converted["_Notification"].Name = "Notification"
@@ -2670,7 +2670,7 @@ do
             Converted["_Ignore"].Name = "Ignore"
             Converted["_Ignore"].Parent = Converted["_Theme"]
 
-            Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Frame"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_Frame"].Parent = Converted["_Notification"]
 
@@ -2916,7 +2916,7 @@ do
 
             --Properties
 
-            Converted["_0_page"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_0_page"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_0_page"].BackgroundTransparency = 1
             Converted["_0_page"].Size = UDim2.new(1, 0, 0, 30)
             Converted["_0_page"].Name = "page"
@@ -3300,7 +3300,7 @@ do
 
             --Properties
 
-            Converted["_0_Toggle"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_0_Toggle"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_0_Toggle"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_0_Toggle"].Name = "0_Toggle"
 
@@ -3308,7 +3308,7 @@ do
             Converted["_UICorner"].Parent = Converted["_0_Toggle"]
 
             Converted["_Toggle"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Toggle"].Position = UDim2.new(1, -18, 0.5, 0)
             Converted["_Toggle"].Size = UDim2.new(0, 19, 0, 19)
             Converted["_Toggle"].Name = "Toggle"
@@ -3601,7 +3601,7 @@ do
 
             --Properties
 
-            Converted["_1_Slider"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_1_Slider"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_1_Slider"].BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
             Converted["_1_Slider"].Position = UDim2.new(-1.51867283e-07, 0, 0.46425584, 0)
             Converted["_1_Slider"].Size = UDim2.new(1, 0, 0, 50)
@@ -3971,7 +3971,7 @@ do
 
             --Properties
 
-            Converted["_2_SliderToggle"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_2_SliderToggle"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_2_SliderToggle"].BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
             Converted["_2_SliderToggle"].Position = UDim2.new(0, 0, 0.627714336, 0)
             Converted["_2_SliderToggle"].Size = UDim2.new(1, 0, 0, 54)
@@ -4040,7 +4040,7 @@ do
             Converted["_Input"].Parent = Converted["_2_SliderToggle"]
 
             Converted["_Toggle"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Toggle"].Position = UDim2.new(1, -14, 0.699999988, 0)
             Converted["_Toggle"].Size = UDim2.new(0, 17, 0, 17)
             Converted["_Toggle"].Name = "Toggle"
@@ -4363,7 +4363,7 @@ do
             --Properties
 
             Converted["_3_Paragraph"].AutomaticSize = Enum.AutomaticSize.Y
-            Converted["_3_Paragraph"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_3_Paragraph"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_3_Paragraph"].BorderColor3 = Color3.fromRGB(27.000000290572643, 42.000001296401024, 53.00000064074993)
             Converted["_3_Paragraph"].Position = UDim2.new(0, 0, 0.627714336, 0)
             Converted["_3_Paragraph"].Size = UDim2.new(1, 0, 0, 1)
@@ -4495,7 +4495,7 @@ do
 
             --Properties
 
-            Converted["_4_Button"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_4_Button"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_4_Button"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_4_Button"].Name = "Button"
 
@@ -4775,7 +4775,7 @@ do
 
             --Properties
 
-            Converted["_5_Textbox"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_5_Textbox"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_5_Textbox"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_5_Textbox"].Name = "5_Textbox"
 
@@ -5057,7 +5057,7 @@ do
 
             --Properties
 
-            Converted["_6_Interactable"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_6_Interactable"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_6_Interactable"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_6_Interactable"].Name = "6_Interactable"
 
@@ -5394,7 +5394,7 @@ do
 
             --Properties
 
-            Converted["_7_Keybind"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_7_Keybind"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_7_Keybind"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_7_Keybind"].Name = "7_Keybind"
             Converted["_7_Keybind"].Parent = game:GetService("CoreGui")
@@ -5687,13 +5687,13 @@ do
 
 
             Converted["_8_Dropdown"].AutomaticSize = Enum.AutomaticSize.Y
-            Converted["_8_Dropdown"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_8_Dropdown"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_8_Dropdown"].BackgroundTransparency = 1
             Converted["_8_Dropdown"].Size = UDim2.new(1, 0, 0, 1)
             Converted["_8_Dropdown"].Name = "8_Dropdown"
             Converted["_8_Dropdown"].Parent = game:GetService("CoreGui")
 
-            Converted["_Main"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Main"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Main"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_Main"].Name = "Main"
             Converted["_Main"].Parent = Converted["_8_Dropdown"]
@@ -5723,7 +5723,7 @@ do
             Converted["_UICorner"].Parent = Converted["_Main"]
 
             Converted["_Fill"].AnchorPoint = Vector2.new(0, 0.5)
-            Converted["_Fill"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Fill"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Fill"].BorderSizePixel = 0
             Converted["_Fill"].Position = UDim2.new(0, 0, 1, 0)
             Converted["_Fill"].Size = UDim2.new(1, 0, 0, 8)
@@ -5821,7 +5821,7 @@ do
             Converted["_Ignore4"].Name = "Ignore"
             Converted["_Ignore4"].Parent = Converted["_Theme4"]
 
-            Converted["_Secondary"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Secondary"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Secondary"].BorderSizePixel = 0
             Converted["_Secondary"].ClipsDescendants = true
             Converted["_Secondary"].Position = UDim2.new(0, 0, 0, 35)
@@ -6293,12 +6293,12 @@ do
             --Properties
 
             Converted["_9_ColorPicker"].AutomaticSize = Enum.AutomaticSize.Y
-            Converted["_9_ColorPicker"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_9_ColorPicker"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_9_ColorPicker"].BackgroundTransparency = 1
             Converted["_9_ColorPicker"].Size = UDim2.new(1, 0, 0, 1)
             Converted["_9_ColorPicker"].Name = "9_ColorPicker"
 
-            Converted["_Main"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Main"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Main"].Size = UDim2.new(1, 0, 0, 35)
             Converted["_Main"].Name = "Main"
             Converted["_Main"].Parent = Converted["_9_ColorPicker"]
@@ -6307,7 +6307,7 @@ do
             Converted["_UICorner"].Parent = Converted["_Main"]
 
             Converted["_Fill"].AnchorPoint = Vector2.new(0, 0.5)
-            Converted["_Fill"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Fill"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Fill"].BorderSizePixel = 0
             Converted["_Fill"].Position = UDim2.new(0, 0, 1, 0)
             Converted["_Fill"].Size = UDim2.new(1, 0, 0, 8)
@@ -6432,7 +6432,7 @@ do
             Converted["_Ignore3"].Name = "Ignore"
             Converted["_Ignore3"].Parent = Converted["_Theme3"]
 
-            Converted["_Secondary"].BackgroundColor3 = Color3.fromRGB(25.000000230968, 25.000000230968, 25.000000230968)
+            Converted["_Secondary"].BackgroundColor3 = Color3.fromRGB(215, 215, 215)
             Converted["_Secondary"].BorderSizePixel = 0
             Converted["_Secondary"].ClipsDescendants = true
             Converted["_Secondary"].Position = UDim2.new(0, 0, 0, 35)
