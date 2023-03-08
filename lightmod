@@ -19,7 +19,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : Colors.
+-- Latest Update : Fixes.
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -1761,7 +1761,7 @@ do
 
             Converted["_ScrollingFrame1"].AutomaticCanvasSize = Enum.AutomaticSize.Y
             Converted["_ScrollingFrame1"].CanvasSize = UDim2.new(0, 0, 1, 0)
-            Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB((225, 225, 225))
+            Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB(225, 225, 225)
             Converted["_ScrollingFrame1"].ScrollBarImageTransparency = 0.20000000298023224
             Converted["_ScrollingFrame1"].ScrollBarThickness = 5
             Converted["_ScrollingFrame1"].Active = true
