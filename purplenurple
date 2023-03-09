@@ -18,7 +18,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : UI To Purple.
+-- Latest Update : Changed Resize Button Color.
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -1035,7 +1035,7 @@ do
         end
 
         info.Rank = info.Rank or "Exploiter"
-        info.RankColor = info.RankColor or Color3.fromRGB(255 , 128 , 0)
+        info.RankColor = info.RankColor or Color3.fromRGB(88, 54, 165)
 
         if info.CheckKey and not info.Discord then
         end
