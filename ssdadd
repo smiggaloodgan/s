@@ -171,7 +171,7 @@ do
             Converted["_ImageLabel"].ImageTransparency = 0.8999999761581421
             Converted["_ImageLabel"].ScaleType = Enum.ScaleType.Crop
             Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_ImageLabel"].BackgroundColor3 = info.Color
+            Converted["_ImageLabel"].BackgroundColor3 = color
             Converted["_ImageLabel"].BackgroundTransparency = 1
             Converted["_ImageLabel"].Position = UDim2.new(0, 0, 0, 0)
             Converted["_ImageLabel"].Size = UDim2.new(0, 0, 1, 0)
@@ -362,11 +362,12 @@ do
         utility:Requirement(type(info)=="table","Information Must Be An Table!")
         utility:Requirement(info.Name,"Missing config folder argument")
         if info.Color==nil then
-            info.Color = Color3.fromRGB(164, 53, 90)
+            info.Color = Color3.fromRGB(255, 255, 255)
         end
         if info.Credit==nil then
             info.Credit = ""
         end
+        local color = info.Color
         info.FullName = info.FullName or info.Name
 
         local function makeLoader()
@@ -490,7 +491,7 @@ do
             Converted["_GameThumbnail"].Image = "https://www.roblox.com/asset-thumbnail/image?assetId=5670218884&width=768&height=432&format=png"
             Converted["_GameThumbnail"].ImageTransparency = 0.8
             Converted["_GameThumbnail"].ScaleType = Enum.ScaleType.Crop
-            Converted["_GameThumbnail"].BackgroundColor3 = info.Color
+            Converted["_GameThumbnail"].BackgroundColor3 = color
             Converted["_GameThumbnail"].BackgroundTransparency = 1
             Converted["_GameThumbnail"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_GameThumbnail"].Name = "GameThumbnail"
@@ -846,7 +847,7 @@ do
             Converted["_TextLabel2"].TextSize = 13
             Converted["_TextLabel2"].AnchorPoint = Vector2.new(0.5, 0.5)
             Converted["_TextLabel2"].AutomaticSize = Enum.AutomaticSize.X
-            Converted["_TextLabel2"].BackgroundColor3 = info.Color
+            Converted["_TextLabel2"].BackgroundColor3 = color
             Converted["_TextLabel2"].BackgroundTransparency = 1
             Converted["_TextLabel2"].Position = UDim2.new(0.5, 0, 0.5, 0)
             Converted["_TextLabel2"].Size = UDim2.new(0, 1, 0.5, 0)
@@ -872,12 +873,12 @@ do
             Converted["_padding"].Parent = Converted["_Button"]
 
             Converted["_ImageLabel3"].Image = "http://www.roblox.com/asset/?id=10954923256"
-            Converted["_ImageLabel3"].BackgroundColor3 = info.Color
+            Converted["_ImageLabel3"].BackgroundColor3 = color
             Converted["_ImageLabel3"].BackgroundTransparency = 1
             Converted["_ImageLabel3"].Size = UDim2.new(0, 18, 0, 18)
             Converted["_ImageLabel3"].Parent = Converted["_Button"]
 
-            Converted["_Profile"].BackgroundColor3 = info.Color
+            Converted["_Profile"].BackgroundColor3 = color
             Converted["_Profile"].BackgroundTransparency = 1
             Converted["_Profile"].ClipsDescendants = true
             Converted["_Profile"].Size = UDim2.new(1, 0, 1, 0)
@@ -887,12 +888,12 @@ do
 
             Converted["_Title2"].Font = Enum.Font.GothamBold
             Converted["_Title2"].Text = "Welcome..."
-            Converted["_Title2"].TextColor3 = info.Color
+            Converted["_Title2"].TextColor3 = color
             Converted["_Title2"].TextSize = 18
             Converted["_Title2"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title2"].TextWrapped = true
             Converted["_Title2"].TextXAlignment = Enum.TextXAlignment.Left
-            Converted["_Title2"].BackgroundColor3 = info.Color
+            Converted["_Title2"].BackgroundColor3 = color
             Converted["_Title2"].BackgroundTransparency = 1
             Converted["_Title2"].Position = UDim2.new(0, 12, 0, 8)
             Converted["_Title2"].Size = UDim2.new(0, 224, 0, 31)
@@ -955,7 +956,7 @@ do
             Converted["_UICorner8"].Parent = Converted["_Thumbnail"]
 
             Converted["_PlayerName"].AnchorPoint = Vector2.new(0, 1)
-            Converted["_PlayerName"].BackgroundColor3 = info.Color
+            Converted["_PlayerName"].BackgroundColor3 = color
             Converted["_PlayerName"].BackgroundTransparency = 1
             Converted["_PlayerName"].Position = UDim2.new(0.298000008, 0, 0.550000012, 3)
             Converted["_PlayerName"].Size = UDim2.new(0, 159, 0, 30)
@@ -964,10 +965,10 @@ do
 
             Converted["_TextLabel3"].Font = Enum.Font.GothamBold
             Converted["_TextLabel3"].Text = ""
-            Converted["_TextLabel3"].TextColor3 = info.Color
+            Converted["_TextLabel3"].TextColor3 = color
             Converted["_TextLabel3"].TextSize = 16
             Converted["_TextLabel3"].AutomaticSize = Enum.AutomaticSize.X
-            Converted["_TextLabel3"].BackgroundColor3 = info.Color
+            Converted["_TextLabel3"].BackgroundColor3 = color
             Converted["_TextLabel3"].BackgroundTransparency = 1
             Converted["_TextLabel3"].Size = UDim2.new(0, 1, 1, 0)
             Converted["_TextLabel3"].Parent = Converted["_PlayerName"]
@@ -978,12 +979,12 @@ do
             Converted["_UIListLayout1"].Parent = Converted["_PlayerName"]
 
             Converted["_ImageLabel4"].Image = "http://www.roblox.com/asset/?id=11117540300"
-            Converted["_ImageLabel4"].BackgroundColor3 = info.Color
+            Converted["_ImageLabel4"].BackgroundColor3 = color
             Converted["_ImageLabel4"].BackgroundTransparency = 1
             Converted["_ImageLabel4"].Size = UDim2.new(0, 16, 0, 16)
             Converted["_ImageLabel4"].Parent = Converted["_PlayerName"]
 
-            Converted["_Rank"].BackgroundColor3 = info.Color
+            Converted["_Rank"].BackgroundColor3 = color
             Converted["_Rank"].BackgroundTransparency = 1
             Converted["_Rank"].Position = UDim2.new(0.298000008, 0, 0.524999976, 3)
             Converted["_Rank"].Size = UDim2.new(0, 159, 0, 30)
@@ -1007,9 +1008,9 @@ do
             Converted["_UIListLayout2"].Parent = Converted["_Rank"]
 
             Converted["_Close"].Image = "http://www.roblox.com/asset/?id=10259890025"
-            Converted["_Close"].ImageColor3 = info.Color
+            Converted["_Close"].ImageColor3 = color
             Converted["_Close"].AnchorPoint = Vector2.new(1, 0)
-            Converted["_Close"].BackgroundColor3 = info.Color
+            Converted["_Close"].BackgroundColor3 = color
             Converted["_Close"].BackgroundTransparency = 1
             Converted["_Close"].Position = UDim2.new(0, 273, 0, 7)
             Converted["_Close"].Size = UDim2.new(0, 23, 0, 23)
@@ -1035,7 +1036,7 @@ do
         end
 
         info.Rank = info.Rank or "Exploiter"
-        info.RankColor = info.RankColor or info.Color
+        info.RankColor = info.RankColor or color
 
         if info.CheckKey and not info.Discord then
         end
@@ -1227,14 +1228,14 @@ do
             Converted["_Main"].Name = "Main"
             Converted["_Main"].Parent = Converted["_VNS"]
 
-            Converted["_Contents"].BackgroundColor3 = info.Color
+            Converted["_Contents"].BackgroundColor3 = color
             Converted["_Contents"].BackgroundTransparency = 1
             Converted["_Contents"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_Contents"].ZIndex = 10
             Converted["_Contents"].Name = "Contents"
             Converted["_Contents"].Parent = Converted["_Main"]
 
-            Converted["_Appearance"].BackgroundColor3 = info.Color
+            Converted["_Appearance"].BackgroundColor3 = color
             Converted["_Appearance"].BackgroundTransparency = 1
             Converted["_Appearance"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_Appearance"].ZIndex = 10
@@ -1315,7 +1316,7 @@ do
             Converted["_Ignore2"].Name = "Ignore"
             Converted["_Ignore2"].Parent = Converted["_Theme2"]
 
-            Converted["_Top1"].BackgroundColor3 = info.Color
+            Converted["_Top1"].BackgroundColor3 = color
             Converted["_Top1"].BackgroundTransparency = 1
             Converted["_Top1"].Size = UDim2.new(1, 0, 0, 32)
             Converted["_Top1"].ZIndex = 10
@@ -1323,9 +1324,9 @@ do
             Converted["_Top1"].Parent = Converted["_Contents"]
 
             Converted["_Close"].Image = "http://www.roblox.com/asset/?id=10259890025"
-            Converted["_Close"].ImageColor3 = info.Color
+            Converted["_Close"].ImageColor3 = color
             Converted["_Close"].AnchorPoint = Vector2.new(1, 0.5)
-            Converted["_Close"].BackgroundColor3 = info.Color
+            Converted["_Close"].BackgroundColor3 = color
             Converted["_Close"].BackgroundTransparency = 1
             Converted["_Close"].Position = UDim2.new(1, -5, 0.5, 0)
             Converted["_Close"].Size = UDim2.new(0, 22, 0, 22)
@@ -1348,9 +1349,9 @@ do
             Converted["_Ignore3"].Parent = Converted["_Theme3"]
 
             Converted["_Menu"].Image = "http://www.roblox.com/asset/?id=10953432322"
-            Converted["_Menu"].ImageColor3 = info.Color
+            Converted["_Menu"].ImageColor3 = color
             Converted["_Menu"].AnchorPoint = Vector2.new(0, 0.5)
-            Converted["_Menu"].BackgroundColor3 = info.Color
+            Converted["_Menu"].BackgroundColor3 = color
             Converted["_Menu"].BackgroundTransparency = 1
             Converted["_Menu"].Position = UDim2.new(0, 9, 0.5, 0)
             Converted["_Menu"].Size = UDim2.new(0, 22, 0, 22)
@@ -1378,7 +1379,7 @@ do
             Converted["_Title"].TextSize = 16
             Converted["_Title"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_Title"].BackgroundColor3 = info.Color
+            Converted["_Title"].BackgroundColor3 = color
             Converted["_Title"].BackgroundTransparency = 1
             Converted["_Title"].Position = UDim2.new(0.5, 0, 0.5, 0)
             Converted["_Title"].Size = UDim2.new(1, -150, 0.5, 0)
@@ -1399,9 +1400,9 @@ do
             Converted["_Ignore5"].Parent = Converted["_Theme5"]
 
             Converted["_Info"].Image = "http://www.roblox.com/asset/?id=10954638982"
-            Converted["_Info"].ImageColor3 = info.Color
+            Converted["_Info"].ImageColor3 = color
             Converted["_Info"].AnchorPoint = Vector2.new(1, 0.5)
-            Converted["_Info"].BackgroundColor3 = info.Color
+            Converted["_Info"].BackgroundColor3 = color
             Converted["_Info"].BackgroundTransparency = 1
             Converted["_Info"].Position = UDim2.new(0, 60, 0.5, 0)
             Converted["_Info"].Size = UDim2.new(0, 22, 0, 20)
@@ -1412,7 +1413,7 @@ do
             Converted["_UIAspectRatioConstraint2"].DominantAxis = Enum.DominantAxis.Height
             Converted["_UIAspectRatioConstraint2"].Parent = Converted["_Info"]
 
-            Converted["_Credits"].BackgroundColor3 = info.Color
+            Converted["_Credits"].BackgroundColor3 = color
             Converted["_Credits"].BackgroundTransparency = 1
             Converted["_Credits"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_Credits"].Visible = false
@@ -1444,11 +1445,11 @@ do
 
             Converted["_B"].Font = Enum.Font.Gotham
             Converted["_B"].Text = "Atlas UI Library" -- please don't remove this, this is open sourced and I leave this here so that users can know the name of the UI library if they are interested in it
-            Converted["_B"].TextColor3 = info.Color
+            Converted["_B"].TextColor3 = color
             Converted["_B"].TextSize = 12
             Converted["_B"].AnchorPoint = Vector2.new(0.5, 0.5)
             Converted["_B"].AutomaticSize = Enum.AutomaticSize.X
-            Converted["_B"].BackgroundColor3 = info.Color
+            Converted["_B"].BackgroundColor3 = color
             Converted["_B"].BackgroundTransparency = 1
             Converted["_B"].Position = UDim2.new(0.5, 0, 0.699999988, 0)
             Converted["_B"].Size = UDim2.new(0, 1, 0.300000012, 0)
@@ -1457,11 +1458,11 @@ do
 
             Converted["_A"].Font = Enum.Font.Gotham
             Converted["_A"].Text = "VNS"
-            Converted["_A"].TextColor3 = info.Color
+            Converted["_A"].TextColor3 = color
             Converted["_A"].TextSize = 12
             Converted["_A"].AnchorPoint = Vector2.new(0.5, 0.5)
             Converted["_A"].AutomaticSize = Enum.AutomaticSize.X
-            Converted["_A"].BackgroundColor3 = info.Color
+            Converted["_A"].BackgroundColor3 = color
             Converted["_A"].BackgroundTransparency = 1
             Converted["_A"].Position = UDim2.new(0.5, 0, 0.300000012, 0)
             Converted["_A"].Size = UDim2.new(0, 1, 0.300000012, 0)
@@ -1485,7 +1486,7 @@ do
             Converted["_Arrow"].Image = "http://www.roblox.com/asset/?id=10955007577"
             Converted["_Arrow"].ImageColor3 = Color3.fromRGB(30, 30, 30)
             Converted["_Arrow"].AnchorPoint = Vector2.new(0.5, 0)
-            Converted["_Arrow"].BackgroundColor3 = info.Color
+            Converted["_Arrow"].BackgroundColor3 = color
             Converted["_Arrow"].BackgroundTransparency = 1
             Converted["_Arrow"].Position = UDim2.new(0.5, 0, -1, 0)
             Converted["_Arrow"].Rotation = 180
@@ -1505,9 +1506,9 @@ do
             Converted["_Ignore6"].Parent = Converted["_Theme6"]
 
             Converted["_Search"].Image = "http://www.roblox.com/asset/?id=10954646243"
-            Converted["_Search"].ImageColor3 = info.Color
+            Converted["_Search"].ImageColor3 = color
             Converted["_Search"].AnchorPoint = Vector2.new(1, 0.5)
-            Converted["_Search"].BackgroundColor3 = info.Color
+            Converted["_Search"].BackgroundColor3 = color
             Converted["_Search"].BackgroundTransparency = 1
             Converted["_Search"].Position = UDim2.new(1, -32, 0.5, 0)
             Converted["_Search"].Size = UDim2.new(0, 22, 0, 21)
@@ -1540,9 +1541,9 @@ do
             Converted["_UICorner2"].Parent = Converted["_SearchBar"]
 
             Converted["_Icon"].Image = "http://www.roblox.com/asset/?id=10954646243"
-            Converted["_Icon"].ImageColor3 = info.Color
+            Converted["_Icon"].ImageColor3 = color
             Converted["_Icon"].AnchorPoint = Vector2.new(0, 0.5)
-            Converted["_Icon"].BackgroundColor3 = info.Color
+            Converted["_Icon"].BackgroundColor3 = color
             Converted["_Icon"].BackgroundTransparency = 1
             Converted["_Icon"].Position = UDim2.new(0, 3, 0.5, 0)
             Converted["_Icon"].Size = UDim2.new(0, 17, 0, 17)
@@ -1561,14 +1562,14 @@ do
             Converted["_Ignore8"].Parent = Converted["_Theme8"]
 
             Converted["_TextBox"].Font = Enum.Font.Gotham
-            Converted["_TextBox"].PlaceholderColor3 = info.Color
+            Converted["_TextBox"].PlaceholderColor3 = color
             Converted["_TextBox"].PlaceholderText = "Search"
             Converted["_TextBox"].Text = ""
-            Converted["_TextBox"].TextColor3 = info.Color
+            Converted["_TextBox"].TextColor3 = color
             Converted["_TextBox"].TextSize = 13
             Converted["_TextBox"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_TextBox"].AnchorPoint = Vector2.new(0.5, 0)
-            Converted["_TextBox"].BackgroundColor3 = info.Color
+            Converted["_TextBox"].BackgroundColor3 = color
             Converted["_TextBox"].BackgroundTransparency = 1
             Converted["_TextBox"].Position = UDim2.new(0.5, 0, 0, 0)
             Converted["_TextBox"].Size = UDim2.new(1, -34, 1, 0)
@@ -1611,7 +1612,7 @@ do
             Converted["_Drag"].Text = ""
             Converted["_Drag"].TextColor3 = Color3.fromRGB(0, 0, 0)
             Converted["_Drag"].TextSize = 14
-            Converted["_Drag"].BackgroundColor3 = info.Color
+            Converted["_Drag"].BackgroundColor3 = color
             Converted["_Drag"].BackgroundTransparency = 1
             Converted["_Drag"].Size = UDim2.new(1, 0, 1, 0)
             Converted["_Drag"].ZIndex = 0
@@ -1619,9 +1620,9 @@ do
             Converted["_Drag"].Parent = Converted["_Top1"]
 
             Converted["_Theme12"].Image = "http://www.roblox.com/asset/?id=10983705188"
-            Converted["_Theme12"].ImageColor3 = info.Color
+            Converted["_Theme12"].ImageColor3 = color
             Converted["_Theme12"].AnchorPoint = Vector2.new(1, 0.5)
-            Converted["_Theme12"].BackgroundColor3 = info.Color
+            Converted["_Theme12"].BackgroundColor3 = color
             Converted["_Theme12"].BackgroundTransparency = 1
             Converted["_Theme12"].Position = UDim2.new(1, -59, 0.5, 0)
             Converted["_Theme12"].Size = UDim2.new(0, 22, 0, 21)
@@ -1674,9 +1675,9 @@ do
             Converted["_UICorner4"].Parent = Converted["_Pages"]
 
             Converted["_Close1"].Image = "http://www.roblox.com/asset/?id=10259890025"
-            Converted["_Close1"].ImageColor3 = info.Color
+            Converted["_Close1"].ImageColor3 = color
             Converted["_Close1"].AnchorPoint = Vector2.new(0, 0.5)
-            Converted["_Close1"].BackgroundColor3 = info.Color
+            Converted["_Close1"].BackgroundColor3 = color
             Converted["_Close1"].BackgroundTransparency = 1
             Converted["_Close1"].Position = UDim2.new(0, 5, 0, 16)
             Converted["_Close1"].Size = UDim2.new(0, 22, 0, 22)
@@ -1719,10 +1720,10 @@ do
 
             Converted["_ScrollingFrame"].AutomaticCanvasSize = Enum.AutomaticSize.Y
             Converted["_ScrollingFrame"].CanvasSize = UDim2.new(0, 0, 1, 0)
-            Converted["_ScrollingFrame"].ScrollBarImageColor3 = info.Color
+            Converted["_ScrollingFrame"].ScrollBarImageColor3 = color
             Converted["_ScrollingFrame"].ScrollBarThickness = 0
             Converted["_ScrollingFrame"].Active = true
-            Converted["_ScrollingFrame"].BackgroundColor3 = info.Color
+            Converted["_ScrollingFrame"].BackgroundColor3 = color
             Converted["_ScrollingFrame"].BackgroundTransparency = 1
             Converted["_ScrollingFrame"].Position = UDim2.new(0, 9, 0, 39)
             Converted["_ScrollingFrame"].Size = UDim2.new(0.88554424, 0, 0.985523105, -40)
@@ -1742,7 +1743,7 @@ do
             Converted["_Ignore16"].Parent = Converted["_Theme17"]
 
             Converted["_Contents1"].AnchorPoint = Vector2.new(1, 1)
-            Converted["_Contents1"].BackgroundColor3 = info.Color
+            Converted["_Contents1"].BackgroundColor3 = color
             Converted["_Contents1"].BackgroundTransparency = 1
             Converted["_Contents1"].Position = UDim2.new(1, 0, 1, 0)
             Converted["_Contents1"].Size = UDim2.new(1, 0, 1, -32)
@@ -1751,7 +1752,7 @@ do
             Converted["_Contents1"].Parent = Converted["_Contents"]
 
             Converted["_Page"].AnchorPoint = Vector2.new(1, 0.5)
-            Converted["_Page"].BackgroundColor3 = info.Color
+            Converted["_Page"].BackgroundColor3 = color
             Converted["_Page"].BackgroundTransparency = 1
             Converted["_Page"].Position = UDim2.new(1, -3, 0.5, 0)
             Converted["_Page"].Size = UDim2.new(1, -9, 1, -12)
@@ -1764,7 +1765,7 @@ do
             Converted["_ScrollingFrame1"].ScrollBarImageTransparency = 0.20000000298023224
             Converted["_ScrollingFrame1"].ScrollBarThickness = 5
             Converted["_ScrollingFrame1"].Active = true
-            Converted["_ScrollingFrame1"].BackgroundColor3 = info.Color
+            Converted["_ScrollingFrame1"].BackgroundColor3 = color
             Converted["_ScrollingFrame1"].BackgroundTransparency = 1
             Converted["_ScrollingFrame1"].BorderSizePixel = 0
             Converted["_ScrollingFrame1"].Size = UDim2.new(1, 0, 1, 0)
@@ -1774,7 +1775,7 @@ do
             Converted["_UIListLayout3"].HorizontalAlignment = Enum.HorizontalAlignment.Center
             Converted["_UIListLayout3"].Parent = Converted["_ScrollingFrame1"]
 
-            Converted["_padding1"].BackgroundColor3 = info.Color
+            Converted["_padding1"].BackgroundColor3 = color
             Converted["_padding1"].BackgroundTransparency = 1
             Converted["_padding1"].Size = UDim2.new(1, 0, 0, 0)
             Converted["_padding1"].Name = "padding"
@@ -1831,7 +1832,7 @@ do
             Converted["_Ignore18"].Parent = Converted["_Theme19"]
 
             Converted["_Resize"].AnchorPoint = Vector2.new(1, 1)
-            Converted["_Resize"].BackgroundColor3 = info.Color
+            Converted["_Resize"].BackgroundColor3 = color
             Converted["_Resize"].BackgroundTransparency = 1
             Converted["_Resize"].Position = UDim2.new(1, -4, 1, -4)
             Converted["_Resize"].Size = UDim2.new(0, 10, 0, 10)
@@ -1859,7 +1860,7 @@ do
             Converted["_ResizeArea"].TextColor3 = Color3.fromRGB(0, 0, 0)
             Converted["_ResizeArea"].TextSize = 14
             Converted["_ResizeArea"].AnchorPoint = Vector2.new(1, 1)
-            Converted["_ResizeArea"].BackgroundColor3 = info.Color
+            Converted["_ResizeArea"].BackgroundColor3 = color
             Converted["_ResizeArea"].BackgroundTransparency = 1
             Converted["_ResizeArea"].Position = UDim2.new(1, 2, 1, 2)
             Converted["_ResizeArea"].Size = UDim2.new(0, 18, 0, 18)
@@ -1902,7 +1903,7 @@ do
             Converted["_Arrow1"].Image = "http://www.roblox.com/asset/?id=10955007577"
             Converted["_Arrow1"].ImageColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
             Converted["_Arrow1"].AnchorPoint = Vector2.new(0.5, 0.5)
-            Converted["_Arrow1"].BackgroundColor3 = info.Color
+            Converted["_Arrow1"].BackgroundColor3 = color
             Converted["_Arrow1"].BackgroundTransparency = 1
             Converted["_Arrow1"].Position = UDim2.new(0.5, 0, 0.5, 0)
             Converted["_Arrow1"].Rotation = 180
@@ -1972,7 +1973,7 @@ do
             Converted["_Text"].Font = Enum.Font.Gotham
             Converted["_Text"].RichText = true
             Converted["_Text"].Text = "This feature is currently not functional."
-            Converted["_Text"].TextColor3 = info.Color
+            Converted["_Text"].TextColor3 = color
             Converted["_Text"].TextSize = 14
             Converted["_Text"].AutomaticSize = Enum.AutomaticSize.XY
             Converted["_Text"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -2453,8 +2454,8 @@ do
                         local finalSize = Vector2.new(math.clamp(mousePos.X-main.AbsolutePosition.X,227,math.huge),math.clamp(mousePos.Y-main.AbsolutePosition.Y,225,math.huge))
                         main.Size = UDim2.fromOffset(finalSize.X,finalSize.Y)
                     else
-                        p1.BackgroundColor3 = info.Color
-                        p2.BackgroundColor3 = info.Color
+                        p1.BackgroundColor3 = color
+                        p2.BackgroundColor3 = color
                     end
                 end))
             end)()
@@ -2707,7 +2708,7 @@ do
             Converted["_Ignore1"].Parent = Converted["_Theme1"]
 
             Converted["_No"].Image = "http://www.roblox.com/asset/?id=10259890025"
-            Converted["_No"].ImageColor3 = info.Color
+            Converted["_No"].ImageColor3 = color
             Converted["_No"].AnchorPoint = Vector2.new(1, 0.5)
             Converted["_No"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_No"].BackgroundTransparency = 1
@@ -2728,7 +2729,7 @@ do
             Converted["_Ignore2"].Parent = Converted["_Theme2"]
 
             Converted["_Yes"].Image = "http://www.roblox.com/asset/?id=10954923256"
-            Converted["_Yes"].ImageColor3 = info.Color
+            Converted["_Yes"].ImageColor3 = color
             Converted["_Yes"].AnchorPoint = Vector2.new(1, 0.5)
             Converted["_Yes"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Yes"].BackgroundTransparency = 1
@@ -2750,7 +2751,7 @@ do
 
             Converted["_Body"].Font = Enum.Font.Gotham
             Converted["_Body"].Text = "Body"
-            Converted["_Body"].TextColor3 = info.Color
+            Converted["_Body"].TextColor3 = color
             Converted["_Body"].TextSize = 13
             Converted["_Body"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Body"].TextWrapped = true
@@ -3132,7 +3133,7 @@ do
 
             Converted["_Title"].Font = Enum.Font.Gotham
             Converted["_Title"].Text = "Section"
-            Converted["_Title"].TextColor3 = info.Color
+            Converted["_Title"].TextColor3 = color
             Converted["_Title"].TextScaled = false
             Converted["_Title"].TextSize = 13
             Converted["_Title"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -3387,7 +3388,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Toggle"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -3622,7 +3623,7 @@ do
             Converted["_Slider"].Parent = Converted["_1_Slider"]
 
             Converted["_Slider1"].Image = "rbxassetid://10261338527"
-            Converted["_Slider1"].ImageColor3 = info.Color
+            Converted["_Slider1"].ImageColor3 = color
             Converted["_Slider1"].ScaleType = Enum.ScaleType.Slice
             Converted["_Slider1"].SliceCenter = Rect.new(100, 100, 100, 100)
             Converted["_Slider1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -3654,9 +3655,9 @@ do
             Converted["_Ignore1"].Parent = Converted["_Theme1"]
 
             Converted["_Input"].Font = Enum.Font.GothamMedium
-            Converted["_Input"].PlaceholderColor3 = info.Color
+            Converted["_Input"].PlaceholderColor3 = color
             Converted["_Input"].Text = "0"
-            Converted["_Input"].TextColor3 = info.Color
+            Converted["_Input"].TextColor3 = color
             Converted["_Input"].TextSize = 14
             Converted["_Input"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Input"].TextXAlignment = Enum.TextXAlignment.Right
@@ -3696,7 +3697,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Slider"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -3992,7 +3993,7 @@ do
             Converted["_Slider"].Parent = Converted["_2_SliderToggle"]
 
             Converted["_Slider1"].Image = "rbxassetid://10261338527"
-            Converted["_Slider1"].ImageColor3 = info.Color
+            Converted["_Slider1"].ImageColor3 = color
             Converted["_Slider1"].ScaleType = Enum.ScaleType.Slice
             Converted["_Slider1"].SliceCenter = Rect.new(100, 100, 100, 100)
             Converted["_Slider1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -4024,9 +4025,9 @@ do
             Converted["_Ignore1"].Parent = Converted["_Theme1"]
 
             Converted["_Input"].Font = Enum.Font.GothamMedium
-            Converted["_Input"].PlaceholderColor3 = info.Color
+            Converted["_Input"].PlaceholderColor3 = color
             Converted["_Input"].Text = "0"
-            Converted["_Input"].TextColor3 = info.Color
+            Converted["_Input"].TextColor3 = color
             Converted["_Input"].TextSize = 14
             Converted["_Input"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Input"].TextXAlignment = Enum.TextXAlignment.Right
@@ -4108,7 +4109,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Slider Toggle"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -4513,7 +4514,7 @@ do
             Converted["_UICorner1"].Parent = Converted["_Image"]
 
             Converted["_ImageLabel"].Image = "http://www.roblox.com/asset/?id=10967996591"
-            Converted["_ImageLabel"].ImageColor3 = info.Color
+            Converted["_ImageLabel"].ImageColor3 = color
             Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
             Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_ImageLabel"].BackgroundTransparency = 1
@@ -4549,7 +4550,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Button"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -4803,7 +4804,7 @@ do
             Converted["_TextBox"].PlaceholderColor3 = Color3.fromRGB(165.00000536441803, 165.00000536441803, 165.00000536441803)
             Converted["_TextBox"].PlaceholderText = "No Text"
             Converted["_TextBox"].Text = ""
-            Converted["_TextBox"].TextColor3 = info.Color
+            Converted["_TextBox"].TextColor3 = color
             Converted["_TextBox"].TextSize = 14
             Converted["_TextBox"].TextWrapped = true
             Converted["_TextBox"].TextXAlignment = Enum.TextXAlignment.Right
@@ -4879,7 +4880,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = ""
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -5101,7 +5102,7 @@ do
 
             Converted["_Title"].Font = Enum.Font.Gotham
             Converted["_Title"].Text = "Execute"
-            Converted["_Title"].TextColor3 = info.Color
+            Converted["_Title"].TextColor3 = color
             Converted["_Title"].TextSize = 14
             Converted["_Title"].AutomaticSize = Enum.AutomaticSize.X
             Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5179,7 +5180,7 @@ do
 
             Converted["_Title2"].Font = Enum.Font.GothamMedium
             Converted["_Title2"].Text = "Interactable"
-            Converted["_Title2"].TextColor3 = info.Color
+            Converted["_Title2"].TextColor3 = color
             Converted["_Title2"].TextSize = 14
             Converted["_Title2"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title2"].TextWrapped = true
@@ -5437,7 +5438,7 @@ do
 
             Converted["_Title"].Font = Enum.Font.Gotham
             Converted["_Title"].Text = "..."
-            Converted["_Title"].TextColor3 = info.Color
+            Converted["_Title"].TextColor3 = color
             Converted["_Title"].TextSize = 14
             Converted["_Title"].AutomaticSize = Enum.AutomaticSize.X
             Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -5458,7 +5459,7 @@ do
             Converted["_Ignore"].Parent = Converted["_Theme"]
 
             Converted["_Symbol"].Image = "http://www.roblox.com/asset/?id=10298464250"
-            Converted["_Symbol"].ImageColor3 = info.Color
+            Converted["_Symbol"].ImageColor3 = color
             Converted["_Symbol"].AnchorPoint = Vector2.new(0, 0.5)
             Converted["_Symbol"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Symbol"].BackgroundTransparency = 1
@@ -5507,7 +5508,7 @@ do
 
             Converted["_Title2"].Font = Enum.Font.GothamMedium
             Converted["_Title2"].Text = "Keybind"
-            Converted["_Title2"].TextColor3 = info.Color
+            Converted["_Title2"].TextColor3 = color
             Converted["_Title2"].TextSize = 14
             Converted["_Title2"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title2"].TextWrapped = true
@@ -5698,7 +5699,7 @@ do
             Converted["_Main"].Parent = Converted["_8_Dropdown"]
 
             Converted["_Arrow"].Image = "rbxassetid://10260760054"
-            Converted["_Arrow"].ImageColor3 = info.Color
+            Converted["_Arrow"].ImageColor3 = color
             Converted["_Arrow"].AnchorPoint = Vector2.new(1, 0.5)
             Converted["_Arrow"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Arrow"].BackgroundTransparency = 1
@@ -5759,7 +5760,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Dropdown"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -5996,7 +5997,7 @@ do
             Converted["_UICorner1"].Parent = Converted["_Image"]
 
             Converted["_ImageLabel"].Image = "http://www.roblox.com/asset/?id=10967996591"
-            Converted["_ImageLabel"].ImageColor3 = info.Color
+            Converted["_ImageLabel"].ImageColor3 = color
             Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
             Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_ImageLabel"].BackgroundTransparency = 1
@@ -6032,7 +6033,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Button"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
@@ -6370,7 +6371,7 @@ do
 
             Converted["_Title1"].Font = Enum.Font.GothamMedium
             Converted["_Title1"].Text = "Color Picker"
-            Converted["_Title1"].TextColor3 = info.Color
+            Converted["_Title1"].TextColor3 = color
             Converted["_Title1"].TextSize = 14
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
