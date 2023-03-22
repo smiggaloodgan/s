@@ -18,7 +18,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : Colors Are BACK!
+-- Latest Update : S
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -600,7 +600,7 @@ do
             Converted["_Ignore1"].Parent = Converted["_Theme1"]
 
             Converted["_Message"].Font = Enum.Font.GothamMedium
-            Converted["_Message"].Text = "Script: AWP Script Hub"
+            Converted["_Message"].Text = ""
             Converted["_Message"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Message"].TextSize = 13
             Converted["_Message"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -785,7 +785,7 @@ do
             Converted["_Ignore6"].Parent = Converted["_Theme6"]
 
             Converted["_Directions"].Font = Enum.Font.GothamMedium
-            Converted["_Directions"].Text = "Enter key below"
+            Converted["_Directions"].Text = "Enter The Key For ".._G.ScriptName.. " Below."
             Converted["_Directions"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Directions"].TextSize = 13
             Converted["_Directions"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -886,7 +886,7 @@ do
             Converted["_Profile"].Parent = Converted["_Loader"]
 
             Converted["_Title2"].Font = Enum.Font.GothamBold
-            Converted["_Title2"].Text = "Welcome..."
+            Converted["_Title2"].Text = "Welcome To, ".._G.ScriptName.."!"
             Converted["_Title2"].TextColor3 = _G.Color
             Converted["_Title2"].TextSize = 18
             Converted["_Title2"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -1211,7 +1211,7 @@ do
             Converted["_Name"].Name = "Name"
             Converted["_Name"].Parent = Converted["_UI_Library"]
 
-            Converted["_Creator"].Value = "Atlas UI Library"
+            Converted["_Creator"].Value = "gunna#5029"
             Converted["_Creator"].Name = "Creator"
             Converted["_Creator"].Parent = Converted["_UI_Library"]
 
@@ -2133,7 +2133,7 @@ do
             main.GameName.Text = GameName
             main.Message.Text = "Script : "..info.FullName
 
-            local allGood = false
+            local transition = false
             local chosen = false
 
             table.insert(_connections,utility:HandleGradientButton(main.Yes,function()
@@ -2197,7 +2197,7 @@ do
                             })
                             thisTransition:Play()
                             thisTransition.Completed:Wait()
-                            allGood = transition
+                            transition = transition
                             transition.Completed:Wait()
                             nextObj.AnchorPoint = Vector2.new(0,0)
                             nextObj.Position = UDim2.fromScale(0,0)
@@ -2213,7 +2213,7 @@ do
                         end
                     end)
                 else
-                    allGood = transition
+                    transition = transition
                 end
                 transition.Completed:Wait()
                 nextObj.AnchorPoint = Vector2.new(0,0)
@@ -2237,7 +2237,7 @@ do
                 ["Position"] = UDim2.new(1, -20, 1, -20)
             }):Play() -- loader in
 
-            while allGood == false do
+            while transition == false do
                 utility:Wait()
             end
 
@@ -2259,7 +2259,7 @@ do
                 if closed then return else closed = true end
                 local e = TS:Create(loader,TweenInfo.new(0.3,Enum.EasingStyle.Sine,Enum.EasingDirection.In,0,false,0),{
                     ["Position"] = UDim2.new(1, 300, 1, -20)
-                }) -- loader in
+                })
                 e:Play()
                 e.Completed:Connect(function()
                     pcall(function()
@@ -2269,13 +2269,20 @@ do
             end
 
             closeBtn.Activated:Connect(doClose)
-
-            allGood:Play()
+        if _G.DestroyIfXPressed == true then
+            for i,v in pairs(game.CoreGui:GetDescendants()) do
+                if v.Name == "VNS" then
+                    v:Destroy()
+                end
+            end
+        else
+            transition:Play()
 
             coroutine.resume(coroutine.create(function()
                 task.wait(3.5)
                 doClose()
             end))
+        end
         end
 
         -- Current page
@@ -2470,15 +2477,15 @@ do
                     if v:IsDescendantOf(lib) and v:FindFirstChild("Hint") and v.Hint:IsA("StringValue") then
                         v = v.Hint
                         local e = v
-                        local allGood = true
+                        local transition = true
                         while e.Parent~=game do
                             if (e:IsA("GuiObject") and not e.Visible) or (e:IsA("LayerCollector") and not e.Enabled) then
-                                allGood = false
+                                transition = false
                                 return
                             end
                             e = e.Parent
                         end
-                        if allGood then
+                        if transition then
                             currentHint = v.Value
                             break
                         end
