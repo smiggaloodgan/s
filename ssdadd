@@ -18,7 +18,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : S
+-- Latest Update : Colors Are BACK! Read Documentation On How To Use Them. sound Now Plays When Executed.
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -600,7 +600,7 @@ do
             Converted["_Ignore1"].Parent = Converted["_Theme1"]
 
             Converted["_Message"].Font = Enum.Font.GothamMedium
-            Converted["_Message"].Text = ""
+            Converted["_Message"].Text = "Script: AWP Script Hub"
             Converted["_Message"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Message"].TextSize = 13
             Converted["_Message"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -628,7 +628,7 @@ do
             Converted["_Title"].Font = Enum.Font.GothamBold
             Converted["_Title"].Text = "Game Found"
             Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
-            Converted["_Title"].TextSize = 18
+            Converted["_Title"].TextSize = 16
             Converted["_Title"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title"].TextWrapped = true
             Converted["_Title"].TextXAlignment = Enum.TextXAlignment.Left
@@ -762,7 +762,7 @@ do
             Converted["_Title1"].Font = Enum.Font.GothamBold
             Converted["_Title1"].Text = "Key System"
             Converted["_Title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-            Converted["_Title1"].TextSize = 18
+            Converted["_Title1"].TextSize = 16
             Converted["_Title1"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title1"].TextWrapped = true
             Converted["_Title1"].TextXAlignment = Enum.TextXAlignment.Left
@@ -785,7 +785,7 @@ do
             Converted["_Ignore6"].Parent = Converted["_Theme6"]
 
             Converted["_Directions"].Font = Enum.Font.GothamMedium
-            Converted["_Directions"].Text = "Enter The Key For ".._G.ScriptName.. " Below."
+            Converted["_Directions"].Text = "Enter Key Below,"
             Converted["_Directions"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Directions"].TextSize = 13
             Converted["_Directions"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -886,9 +886,9 @@ do
             Converted["_Profile"].Parent = Converted["_Loader"]
 
             Converted["_Title2"].Font = Enum.Font.GothamBold
-            Converted["_Title2"].Text = "Welcome To, ".._G.ScriptName.."!"
+            Converted["_Title2"].Text = "Welcome To ".._G.ScriptName.."..."
             Converted["_Title2"].TextColor3 = _G.Color
-            Converted["_Title2"].TextSize = 18
+            Converted["_Title2"].TextSize = 16
             Converted["_Title2"].TextTruncate = Enum.TextTruncate.AtEnd
             Converted["_Title2"].TextWrapped = true
             Converted["_Title2"].TextXAlignment = Enum.TextXAlignment.Left
@@ -1207,7 +1207,7 @@ do
             Converted["_UI_Library"].Name = "UI_Library"
             Converted["_UI_Library"].Parent = Converted["_VNS"]
 
-            Converted["_Name"].Value = "Atlas UI Library"
+            Converted["_Name"].Value = _G.ScriptName
             Converted["_Name"].Name = "Name"
             Converted["_Name"].Parent = Converted["_UI_Library"]
 
@@ -1443,7 +1443,7 @@ do
             Converted["_Frame"].Parent = Converted["_Main1"]
 
             Converted["_B"].Font = Enum.Font.Gotham
-            Converted["_B"].Text = "Atlas UI Library" -- please don't remove this, this is open sourced and I leave this here so that users can know the name of the UI library if they are interested in it
+            Converted["_B"].Text = "Atlas UI Library" -- Don't Remove This!
             Converted["_B"].TextColor3 = _G.Color
             Converted["_B"].TextSize = 12
             Converted["_B"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2133,7 +2133,7 @@ do
             main.GameName.Text = GameName
             main.Message.Text = "Script : "..info.FullName
 
-            local transition = false
+            local allGood = false
             local chosen = false
 
             table.insert(_connections,utility:HandleGradientButton(main.Yes,function()
@@ -2197,7 +2197,7 @@ do
                             })
                             thisTransition:Play()
                             thisTransition.Completed:Wait()
-                            transition = transition
+                            allGood = transition
                             transition.Completed:Wait()
                             nextObj.AnchorPoint = Vector2.new(0,0)
                             nextObj.Position = UDim2.fromScale(0,0)
@@ -2213,7 +2213,7 @@ do
                         end
                     end)
                 else
-                    transition = transition
+                    allGood = transition
                 end
                 transition.Completed:Wait()
                 nextObj.AnchorPoint = Vector2.new(0,0)
@@ -2237,7 +2237,7 @@ do
                 ["Position"] = UDim2.new(1, -20, 1, -20)
             }):Play() -- loader in
 
-            while transition == false do
+            while allGood == false do
                 utility:Wait()
             end
 
@@ -2259,7 +2259,7 @@ do
                 if closed then return else closed = true end
                 local e = TS:Create(loader,TweenInfo.new(0.3,Enum.EasingStyle.Sine,Enum.EasingDirection.In,0,false,0),{
                     ["Position"] = UDim2.new(1, 300, 1, -20)
-                })
+                }) -- loader in
                 e:Play()
                 e.Completed:Connect(function()
                     pcall(function()
@@ -2269,20 +2269,13 @@ do
             end
 
             closeBtn.Activated:Connect(doClose)
-        if _G.DestroyIfXPressed == true then
-            for i,v in pairs(game.CoreGui:GetDescendants()) do
-                if v.Name == "VNS" then
-                    v:Destroy()
-                end
-            end
-        else
-            transition:Play()
+
+            allGood:Play()
 
             coroutine.resume(coroutine.create(function()
                 task.wait(3.5)
                 doClose()
             end))
-        end
         end
 
         -- Current page
@@ -2477,15 +2470,15 @@ do
                     if v:IsDescendantOf(lib) and v:FindFirstChild("Hint") and v.Hint:IsA("StringValue") then
                         v = v.Hint
                         local e = v
-                        local transition = true
+                        local allGood = true
                         while e.Parent~=game do
                             if (e:IsA("GuiObject") and not e.Visible) or (e:IsA("LayerCollector") and not e.Enabled) then
-                                transition = false
+                                allGood = false
                                 return
                             end
                             e = e.Parent
                         end
-                        if transition then
+                        if allGood then
                             currentHint = v.Value
                             break
                         end
