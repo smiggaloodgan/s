@@ -574,7 +574,7 @@ do
             Converted["_UIGradient2"].Parent = Converted["_Yes"]
 
             Converted["_GameName"].Font = Enum.Font.Gotham
-            Converted["_GameName"].Text = "[âš”] item asylum"
+            Converted["_GameName"].Text = "Game Name"
             Converted["_GameName"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_GameName"].TextSize = 13
             Converted["_GameName"].TextTruncate = Enum.TextTruncate.AtEnd
