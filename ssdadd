@@ -18,7 +18,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update :B
+-- Latest Update : Read Documentation.
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -2270,18 +2270,10 @@ do
 
             closeBtn.Activated:Connect(doClose)
             allGood:Play()
-            if _G.DestroyIfXPressed == true then
-                for i,v in pairs(game.CoreGui:GetDescendants()) do
-                    if v.Name == "VNS" then
-                        v:Destroy()
-                    end
-                end -- Deletes / Destroys UI            
-            else
             coroutine.resume(coroutine.create(function()
                 task.wait(3.5)
                 doClose()
             end))
-        end
         end
 
         -- Current page
@@ -2593,7 +2585,15 @@ do
         local closeBtn = utility:CreateButtonObject(lib.Main.Contents.Top.Close)
 
         closeBtn.Activated:Connect(function()
+        if _G.DestroyIfXPressed == true then
+                for i,v in pairs(game.CoreGui:GetDescendants()) do
+                    if v.Name == "VNS" then
+                        v:Destroy()
+                    end
+                end -- Deletes / Destroys UI            
+            else
             self:Toggle(false)
+            end
         end)
 
         return self
