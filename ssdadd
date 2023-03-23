@@ -18,7 +18,7 @@
 -- Discord Tag : gunna#5029
 -- Discord Server : https://discord.gg/7YmMpfe3Ka
 
--- Latest Update : A
+-- Latest Update :B
 
 -- Disrespecting Other Script Owners Will Lead To Consequences. 
 
@@ -785,7 +785,7 @@ do
             Converted["_Ignore6"].Parent = Converted["_Theme6"]
 
             Converted["_Directions"].Font = Enum.Font.GothamMedium
-            Converted["_Directions"].Text = "Enter Key Below,"
+            Converted["_Directions"].Text = "Enter ".._G.ScriptName.." Key Below,"
             Converted["_Directions"].TextColor3 = Color3.fromRGB(255, 255, 255)
             Converted["_Directions"].TextSize = 13
             Converted["_Directions"].TextTruncate = Enum.TextTruncate.AtEnd
@@ -2259,7 +2259,7 @@ do
                 if closed then return else closed = true end
                 local e = TS:Create(loader,TweenInfo.new(0.3,Enum.EasingStyle.Sine,Enum.EasingDirection.In,0,false,0),{
                     ["Position"] = UDim2.new(1, 300, 1, -20)
-                }) -- loader in
+                })
                 e:Play()
                 e.Completed:Connect(function()
                     pcall(function()
@@ -2269,13 +2269,19 @@ do
             end
 
             closeBtn.Activated:Connect(doClose)
-
             allGood:Play()
-
+            if _G.DestroyIfXPressed == true then
+                for i,v in pairs(game.CoreGui:GetDescendants()) do
+                    if v.Name == "VNS" then
+                        v:Destroy()
+                    end
+                end -- Deletes / Destroys UI            
+            else
             coroutine.resume(coroutine.create(function()
                 task.wait(3.5)
                 doClose()
             end))
+        end
         end
 
         -- Current page
